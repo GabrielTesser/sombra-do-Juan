@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <Image x:Name="juan">
+            <Image.GestureRecognizers>
+                <DragGestureRecognizer />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image BackgroundColor="Silver"
+       HeightRequest="300"
+       WidthRequest="250">
+            <Image.GestureRecognizers>
+                <DropGestureRecognizer />
+            </Image.GestureRecognizers>
+        </Image>
+
+    </StackLayout>
+    
+    
+
+</ContentPage>
