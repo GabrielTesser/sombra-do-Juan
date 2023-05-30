@@ -6,7 +6,7 @@
     <StackLayout>
         <Image x:Name="juan">
             <Image.GestureRecognizers>
-                <DragGestureRecognizer />
+                <DragGestureRecognizer DragStarting="DragGestureRecognizer_DragStarting" />
             </Image.GestureRecognizers>
         </Image>
 
@@ -14,9 +14,11 @@
        HeightRequest="300"
        WidthRequest="250">
             <Image.GestureRecognizers>
-                <DropGestureRecognizer />
+                <DropGestureRecognizer x:Name="selecao"  Drop="selecao_Drop"/>
             </Image.GestureRecognizers>
         </Image>
+
+        <Button Text="Remove" TextColor="red" BackgroundColor="Purple" Clicked="Button_Clicked" />
 
     </StackLayout>
     
